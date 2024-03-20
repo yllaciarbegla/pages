@@ -1,0 +1,95 @@
+.testimonials {
+	font-family: Inter;
+	color: var(--accent-color);
+
+	@media (min-width: 768px) {
+		background-image: url('../img/tatum-testimonials.png');
+		background-repeat: no-repeat;
+		background-position-x: calc(100% + 5px);
+		background-size: 35%;
+	}
+
+	&__logo {
+		font-family: Outfit;
+		font-style: normal;
+	}
+
+	&__content {
+		height: 100%;
+	}
+
+	&__title {}
+
+	&__swiper {}
+}
+
+.about {
+
+	&__title {}
+
+	&__text {}
+
+	a {
+		transition: background-color .4s ease;
+		background-color: var(--accent-color);
+		border: 2px solid var(--accent-color);
+
+		&:hover {
+			background-color: var(--btn);
+			color: var(--accent-color);
+		}
+	}
+}
+
+.review {
+	min-height: 290px;
+
+	transition: all .4s ease;
+
+	background-color: var(--accent-color);
+	color: white;
+	box-shadow: inset 9px 9px 18px var(--accent-color),
+		inset -9px -9px 18px var(--accent-color);
+
+
+	&__wrapper {
+		height: 100%;
+	}
+
+	&__text {
+		position: relative;
+
+		&::before {
+			content: '“';
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			font-size: 66px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			letter-spacing: 2.64px;
+		}
+	}
+
+	&__user {}
+}
+
+.user {
+	grid-template-columns: auto 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	gap: 0 10px;
+
+	picture {
+		grid-row: 1 / span 2;
+	}
+
+	&__photo {}
+
+	&__name {
+		align-items: end;
+	}
+
+	&__date {}
+}

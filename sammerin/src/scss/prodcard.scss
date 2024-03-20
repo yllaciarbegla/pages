@@ -1,0 +1,58 @@
+.prod-card {
+	margin-top: 100px;
+	border-radius: 20px;
+	background: #FFCA40;
+	box-shadow: inset 9px 9px 18px #dbae37,
+		inset -9px -9px 18px #ffe649;
+	background-color: var(--second-color);
+	transition: margin-top .5s ease;
+
+	&__wrapper {
+		height: 100%;
+	}
+
+	&__img {
+		overflow: hidden;
+
+		img {
+			max-width: 300px;
+			height: 100%;
+			transform: rotate(30deg) translate(10px, -30px);
+		}
+	}
+
+	&__name {}
+
+	&__sizes {
+		color: white;
+		transition: all .4s ease;
+
+		.form-group {
+
+		}
+
+		label {
+			position: relative;
+			width: 50px;
+			height: 50px;
+			padding: 15px;
+			border-radius: 20px;
+			background-color: var(--accent-color);
+			cursor: pointer;
+		}
+
+		input {
+			padding: 0;
+			height: initial;
+			width: initial;
+			margin-bottom: 0;
+			display: none;
+			cursor: pointer;
+
+			&:checked+label {
+				background-color: white;
+				color: var(--accent-color);
+			}
+		}
+	}
+}

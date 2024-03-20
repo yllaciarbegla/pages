@@ -1,0 +1,19 @@
+.shop {
+	color: var(--accent-color);
+	font-family: Outfit;
+
+	&__logo {
+
+	}
+
+	&__title {}
+
+	&__swiper {
+		.swiper-slide-active {
+			.prod-card {
+				margin-top: 0;
+			}
+		}
+	}
+
+}

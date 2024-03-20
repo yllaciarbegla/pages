@@ -1,0 +1,62 @@
+.decoration {
+	display: flex;
+	position: absolute;
+
+	&_left,
+	&_right {
+		animation: bouncing 6s ease infinite;
+	}
+
+	&_left {
+		top: 55%;
+		left: 0;
+	}
+
+	&_horizontal {
+		flex-direction: column;
+		top: -40px;
+		left: 50%;
+		animation: swaying 10s ease infinite;
+
+		@media (max-height: 800px) {
+			&.decoration{
+				display: none;
+			}
+		}
+		@media (min-width: 1024px) {
+			top: 0;
+		}
+
+		.decoration__line {
+			flex-direction: row;
+		}
+	}
+
+	&_right {
+		top: 75%;
+		right: 0;
+		animation-delay: 1s;
+	}
+
+	&__line {}
+
+	@keyframes bouncing {
+		0% {
+			transform: translateY(0);
+		}
+
+		50% {
+			transform: translateY(8px);
+		}
+	}
+
+	@keyframes swaying {
+		0% {
+			transform: translateX(0);
+		}
+
+		50% {
+			transform: translateX(8px);
+		}
+	}
+}
