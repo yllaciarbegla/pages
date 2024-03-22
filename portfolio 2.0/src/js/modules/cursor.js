@@ -13,13 +13,12 @@ export const cursorInit = () => {
 	});
 
 	document.addEventListener('mousemove', (e) => {
-		let x = e.clientX;
-		let y = e.clientY;
-
-		let newCoord = `left:${x}px;top:${y}px;`;
-
+		let newCoord = `left:${e.clientX}px;top:${e.clientY}px;`;
 		cursor.style.cssText = newCoord;
-		aura.style.cssText = newCoord;
+	});
+
+	document.addEventListener('mousemove', (e) => {
+		aura.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
 	});
 
 	document.addEventListener('mouseout', (e) => {

@@ -38,7 +38,7 @@
 	border: 1px solid rgba(0, 0, 0, 0.6);
 	box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
 	transform: translate(-50%, -50%);
-	transition: all 150ms ease-out;
+	transition: all .25s ease-out;
 	pointer-events: none;
 
 	&.active {
