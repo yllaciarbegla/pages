@@ -108,7 +108,7 @@
 			}
 		}
 
-		transform: translateY(-10%);
+		transform: translateY(10%);
 		opacity: 0;
 
 		&._element-show {
@@ -244,7 +244,7 @@
 
 		.element-animation__wrapper {
 			transition: all 0.4s;
-			transform: translateY(-10%);
+			transform: translateY(10%);
 			opacity: 0;
 
 			&:nth-child(1) {
@@ -285,7 +285,7 @@ body:has(.gallery__modal[open]) {
 @keyframes show {
 	from {
 		opacity: 0;
-		transform: translateY(-10%);
+		transform: translateY(10%);
 	}
 	to {
 		opacity: 1;
@@ -296,6 +296,6 @@ body:has(.gallery__modal[open]) {
 @keyframes hide {
 	to {
 		opacity: 0;
-		transform: translateY(-10%);
+		transform: translateY(10%);
 	}
 }
