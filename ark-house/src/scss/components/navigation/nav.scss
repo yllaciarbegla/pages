@@ -7,6 +7,18 @@
 				content: 'CLOSE';
 				font-size: 0.875rem;
 			}
+
+			&.nav-toggler::before {
+				left: -100%;
+			}
+			&.nav-toggler::after {
+				left: 100%;
+			}
+			.nav-toggler__text::before {
+				animation: moveUpThenDown 0.8s ease 0.2s forwards,
+					shakeWhileMovingUp 0.8s ease 0.2s forwards,
+					shakeWhileMovingDown 0.2s ease 0.8s forwards;
+			}
 		}
 
 		@media screen and (min-width: 768px) {
