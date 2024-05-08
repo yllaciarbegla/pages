@@ -221,11 +221,12 @@
 	&__image {
 		height: 100%;
 
-		transform: translateY(-10%);
+		transform: translateY(15%);
 		opacity: 0;
 		transition: transform 0.4s, opacity 0.4s;
 	}
 	&__item {
+		overflow: hidden;
 		position: relative;
 		aspect-ratio: 1;
 
@@ -500,7 +501,7 @@
 		}
 
 		// Animation
-		transform: translateY(-10%);
+		transform: translateY(10%);
 		opacity: 0;
 
 		&._element-show {
@@ -641,7 +642,7 @@
 				}
 			}
 
-			transform: translateY(-10%);
+			transform: translateY(10%);
 			opacity: 0;
 
 			@media screen and (min-width: 1024px) {
