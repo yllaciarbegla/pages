@@ -47,7 +47,6 @@ img {
 
 .h3 {
 	font-family: var(--second-family);
-	font-size: 1rem;
 	line-height: 1.4;
 
 	@media screen and (min-width: 768px) {
@@ -122,6 +121,7 @@ img {
 }
 
 @import 'components/button';
+@import 'components/feature-card';
 @import 'components/article-card';
 @import 'components/testimonial-card';
 @import 'components/footer';
