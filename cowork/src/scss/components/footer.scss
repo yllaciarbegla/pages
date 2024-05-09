@@ -1,0 +1,152 @@
+.footer {
+	&__wrapper {
+	}
+
+	&__content {
+		margin-block-end: 2rem;
+		padding: 2rem;
+		border-radius: 1.5rem;
+
+		display: flex;
+		gap: 2.5rem;
+		align-items: center;
+		flex-direction: column;
+
+		background-color: var(--black);
+
+		@media screen and (min-width: 768px) {
+			padding: 3rem 2rem;
+			border-radius: 2rem;
+
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	&__group {
+		max-width: 500px;
+		@media screen and (max-width: 767.5px) {
+			text-align: center;
+		}
+	}
+
+	&__logo {
+		margin-block-end: 2rem;
+	}
+
+	&__form {
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media screen and (min-width: 48rem) {
+			align-items: flex-start;
+		}
+
+		&:before {
+			content: attr(aria-label);
+			margin-block-end: 0.5rem;
+
+			font-family: var(--first-family);
+			font-weight: 600;
+			font-size: 0.75rem;
+			line-height: 1.5;
+			text-transform: uppercase;
+			color: var(--white);
+		}
+	}
+
+	&__links {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		align-items: center;
+
+		@media screen and (min-width: 425px) {
+			flex-direction: row;
+			justify-content: space-evenly;
+			gap: 2.5rem;
+		}
+		@media screen and (min-width: 768px) {
+			justify-content: flex-end;
+		}
+	}
+
+	&__item {
+	}
+
+	&__link {
+		color: var(--white);
+	}
+
+	&__copyright {
+		padding-block-end: 2rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media screen and (min-width: 48rem) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}
+.footer-newsletter {
+	&__description {
+		color: var(--white);
+
+		&:first-of-type {
+			margin-block-end: 1.5rem;
+		}
+		&:nth-of-type(2) {
+			@media screen and (min-width: 450px) {
+				max-width: 90%;
+				margin-inline: auto;
+			}
+			@media screen and (min-width: 768px) {
+				margin-inline: 0;
+			}
+		}
+	}
+
+	&__input {
+		margin-block-end: 1rem;
+		padding: 0.75rem;
+		width: min(100%, 350px);
+		background-color: transparent;
+		border-bottom: 1px solid;
+		color: var(--white);
+	}
+
+	&__button {
+		margin-block-end: 1.5rem;
+	}
+}
+.footer-copyright {
+	&__copy {
+		margin-block-end: 1rem;
+		text-align: center;
+		color: var(--black);
+
+		@media screen and (min-width: 768px) {
+			margin-block-end: 0;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem 1.5rem;
+		justify-content: center;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		color: var(--black);
+	}
+}

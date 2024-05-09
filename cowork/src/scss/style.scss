@@ -19,6 +19,7 @@
 }
 
 .h1 {
+	font-family: var(--second-family);
 	font-size: 3rem;
 	line-height: 1.2;
 
@@ -30,6 +31,7 @@
 }
 
 .h2 {
+	font-family: var(--second-family);
 	font-size: 2rem;
 	line-height: 1.4;
 
@@ -40,6 +42,7 @@
 }
 
 .h3 {
+	font-family: var(--second-family);
 	font-size: 1rem;
 	line-height: 1.4;
 
@@ -50,6 +53,7 @@
 }
 
 .subheading {
+	font-family: var(--second-family);
 	font-weight: 600;
 	font-size: 1rem;
 	line-height: 1.4;
@@ -66,20 +70,53 @@
 	line-height: 1.5;
 }
 
+.text,
+.text-bold {
+	font-family: var(--first-family);
+}
+
 .text-bold {
 	font-weight: 500;
 	line-height: 2;
 }
 
 .blockquote {
+	font-family: var(--second-family);
 	@media screen and (min-width: 48rem) {
 		font-size: 1.5rem;
 	}
 }
 
 .text_sm {
+	font-family: var(--first-family);
 	font-size: 0.875rem;
 	line-height: 1.8;
 }
 
+.animated-underline {
+	text-decoration: none;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 1px;
+	transition: background-size 0.4s;
+
+	&:focus-visible {
+		background-size: 100% 1px;
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			background-size: 100% 1px;
+		}
+	}
+
+	@media (hover: none) {
+		&:active {
+			background-size: 100% 1px;
+		}
+	}
+}
+
 @import 'components/button';
+@import 'components/footer';
