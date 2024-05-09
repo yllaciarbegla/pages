@@ -1,15 +1,15 @@
 @import 'reset';
-// @import 'fonts';
+@import 'fonts';
 
 :root {
-	--dark: #272727;
+	--black: #272727;
 	--blue: #3139fb;
 	--white: #fcfcfd;
 	--yellow: #fffadd;
 	--red: #ff3333;
 
-	--first-family: 'General Sans Variable', sans-serif;
-	--second-family: 'Neue Regrade', sans-serif;
+	--first-family: 'GeneralSans', sans-serif;
+	--second-family: 'Neue', sans-serif;
 }
 
 .h1,
@@ -81,3 +81,5 @@
 	font-size: 0.875rem;
 	line-height: 1.8;
 }
+
+@import 'components/button';
