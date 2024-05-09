@@ -1,0 +1,46 @@
+.article-card {
+	width: min(100%, 28.625rem);
+
+	&__link {
+		display: inline-block;
+		border-radius: 24px 24px 0 0;
+		overflow: hidden;
+
+		transition: all .3s;
+		color: var(--black);
+
+		&:focus-visible {
+			outline: 1px solid;
+			outline-offset: 2px;
+		}
+	}
+
+	&__image {
+		display: block;
+		margin-block-end: 1rem;
+		overflow: hidden;
+		border-radius: 24px;
+	}
+
+	&__category {
+		display: inline-block;
+		padding: 0.25rem 0.5rem;
+		margin-inline-end: 1rem;
+		margin-block-end: 1rem;
+		border: 1px solid var(--black);
+		border-radius: 8px;
+
+		font-family: var(--first-family);
+		font-weight: 600;
+		font-size: 0.875rem;
+		line-height: 1.5;
+	}
+
+	&__read-time {
+		display: inline-block;
+		margin-block-end: 1rem;
+	}
+
+	&__title {
+	}
+}

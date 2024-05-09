@@ -12,6 +12,10 @@
 	--second-family: 'Neue', sans-serif;
 }
 
+img {
+	max-width: 100%;
+}
+
 .h1,
 .h2,
 .h3 {
@@ -55,7 +59,6 @@
 .subheading {
 	font-family: var(--second-family);
 	font-weight: 600;
-	font-size: 1rem;
 	line-height: 1.4;
 
 	@media screen and (min-width: 48rem) {
@@ -119,4 +122,5 @@
 }
 
 @import 'components/button';
+@import 'components/article-card';
 @import 'components/footer';
