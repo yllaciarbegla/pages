@@ -27,7 +27,7 @@ img {
 	font-size: 3rem;
 	line-height: 1.2;
 
-	@media screen and (min-width: 48rem) {
+	@media screen and (min-width: 768px) {
 		font-size: 6rem;
 		line-height: 1;
 		letter-spacing: -0.01em;
@@ -39,7 +39,7 @@ img {
 	font-size: 2rem;
 	line-height: 1.4;
 
-	@media screen and (min-width: 48rem) {
+	@media screen and (min-width: 768px) {
 		font-size: 3rem;
 		line-height: 1.2;
 	}
@@ -50,7 +50,7 @@ img {
 	font-size: 1rem;
 	line-height: 1.4;
 
-	@media screen and (min-width: 48rem) {
+	@media screen and (min-width: 768px) {
 		font-size: 1.5rem;
 		line-height: 1.4;
 	}
@@ -61,7 +61,7 @@ img {
 	font-weight: 600;
 	line-height: 1.4;
 
-	@media screen and (min-width: 48rem) {
+	@media screen and (min-width: 768px) {
 		font-size: 24px;
 		line-height: 1.4;
 	}
@@ -123,4 +123,5 @@ img {
 
 @import 'components/button';
 @import 'components/article-card';
+@import 'components/testimonial-card';
 @import 'components/footer';
