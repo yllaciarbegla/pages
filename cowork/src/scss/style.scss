@@ -1,19 +1,27 @@
 @import 'reset';
-@import 'fonts';
+// @import 'fonts';
 
 :root {
-	--black: #272727;
+	--black: #06050f;
 	--blue: #3139fb;
 	--white: #fcfcfd;
 	--yellow: #fffadd;
 	--red: #ff3333;
 
-	--first-family: 'GeneralSans', sans-serif;
+	--first-family: 'General Sans', sans-serif;
 	--second-family: 'Neue', sans-serif;
 }
 
+html._lock,
+html._lock .page {
+	overflow: hidden;
+	background-color: var(--black);
+}
+
+
 img {
 	max-width: 100%;
+	object-fit: cover;
 }
 
 .h1,
@@ -84,7 +92,7 @@ img {
 
 .blockquote {
 	font-family: var(--second-family);
-	@media screen and (min-width: 48rem) {
+	@media screen and (min-width: 768px) {
 		font-size: 1.5rem;
 	}
 }
@@ -93,6 +101,12 @@ img {
 	font-family: var(--first-family);
 	font-size: 0.875rem;
 	line-height: 1.8;
+}
+
+.subtitle {
+	font-weight: 600;
+	font-size: 0.75rem;
+	line-height: 1.5;
 }
 
 .animated-underline {
@@ -119,10 +133,3 @@ img {
 		}
 	}
 }
-
-@import 'components/button';
-@import 'components/feature-card';
-@import 'components/article-card';
-@import 'components/accordion';
-@import 'components/testimonial-card';
-@import 'components/footer';

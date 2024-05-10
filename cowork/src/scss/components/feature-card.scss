@@ -1,18 +1,20 @@
 .feature-card {
 	width: min(100%, 458.67px);
-	padding: 1.5rem;
+	padding: 24px;
 	border: 1px solid var(--black);
-	border-radius: 1.5rem;
+	border-radius: 24px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 1rem;
+	gap: 16px;
+
+	text-align: center;
 
 	@media screen and (min-width: 768px) {
-		padding: 2rem;
-		border-radius: 2rem;
-		gap: 1.5rem;
+		padding: 32px;
+		border-radius: 32px;
+		gap: 28.8px;
 	}
 
 	&__iamge {
