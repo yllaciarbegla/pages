@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+	@@include('html/head.html', { 'title': 'Cowork - Coworking Space Company',
+	'styles': '<link rel="stylesheet" href="css/home.min.css" />' })
 
-@@include('html/head.html', {
-	'title': 'Cowork - Coworking Space Company'
-})
-
-<body class="page">
-
-</body>
-
+	<body class="page">
+		<div class="page__container">
+			@@include('html/components/header.html')
+			<section class="hero">
+				<div class="hero__content">
+					<h1 class="hero__title h1">
+						Elevate Your Workspace with
+						<span class="hero__title_highlight">Cowork</span>
+					</h1>
+					<p class="hero__slogan subheading">Where innovation meets <br> collaboration 🚀</p>
+					@@include('html/components/button.html', { 'classes': 'btn_big btn_red hero__button', 'text': 'Claim Your Spot' })
+				</div>
+				<div class="hero__image hero-image">
+					<picture class="hero-image__wrapper">
+						<img class="hero-image__item" src="img/home/image.jpg" alt="" />
+					</picture>
+				</div>
+			</section>
+			<div class="trusted">
+				<p class="trusted__title subtitle">Trusted by Leading Companies</p>
+				<ul class="trusted__list">
+					<li class="trusted__item">
+						<img
+							class="trusted__logo"
+							src="img/icons/logo-1.svg"
+							alt="Logoipsum logo" />
+					</li>
+					<li class="trusted__item">
+						<img
+							class="trusted__logo"
+							src="img/icons/logo-2.svg"
+							alt="Logoipsum logo" />
+					</li>
+					<li class="trusted__item">
+						<img
+							class="trusted__logo"
+							src="img/icons/logo-3.svg"
+							alt="Logoipsum logo" />
+					</li>
+					<li class="trusted__item">
+						<img
+							class="trusted__logo"
+							src="img/icons/logo-4.svg"
+							alt="Logoipsum logo" />
+					</li>
+					<li class="trusted__item">
+						<img
+							class="trusted__logo"
+							src="img/icons/logo-5.svg"
+							alt="Logoipsum logo" />
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
 </html>

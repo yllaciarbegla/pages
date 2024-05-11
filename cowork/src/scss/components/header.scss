@@ -168,18 +168,19 @@
 		position: fixed;
 		visibility: hidden;
 		pointer-events: none;
+		z-index: 10;
 		opacity: 0;
 		left: -100%;
 		bottom: 0;
 
 		overflow: auto;
-		padding: 40px 20px;
+		padding: 40px 36px;
 		width: 100%;
-		height: calc(100vh - 70.6px);
-		height: calc(100dvh - 70.6px);
+		height: calc(100vh - 86.6px);
+		height: calc(100dvh - 86.6px);
 
 		display: flex;
-		gap: 48px;
+		gap: 3rem;
 		flex-direction: column;
 		justify-content: space-between;
 
@@ -196,9 +197,14 @@
 			height: auto;
 			pointer-events: all;
 
+			gap: 2rem;
 			flex-direction: row;
 
 			background-color: transparent;
+		}
+
+		@media (min-width: 1024px) {
+			gap: 3rem;
 		}
 
 		&_active {

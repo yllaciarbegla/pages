@@ -1,0 +1,45 @@
+.trusted {
+	padding-block: 48px;
+	overflow: hidden;
+
+	@media screen and (min-width: 768px) {
+		padding-block: 32px;
+	}
+
+	&__title {
+		margin-block-end: 1.5rem;
+		text-align: center;
+		color: var(--blue);
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+
+		@media screen and (max-width: 767.5px) {
+			animation: conveyor 20s linear infinite;
+		}
+
+		@media screen and (min-width: 768px) {
+			gap: 3rem;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__item {
+		@media screen and (max-width: 767.5px) {
+			flex: 1 0 auto;
+		}
+	}
+
+	&__logo {
+	}
+}
+
+@keyframes conveyor {
+	to {
+		transform: translateX(-880px);
+	}
+}
