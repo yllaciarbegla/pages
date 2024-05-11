@@ -1,5 +1,5 @@
 @import 'reset';
-// @import 'fonts';
+@import 'fonts';
 
 :root {
 	--black: #06050f;
@@ -8,8 +8,8 @@
 	--yellow: #fffadd;
 	--red: #ff3333;
 
-	--first-family: 'General Sans', sans-serif;
-	--second-family: 'Neue', sans-serif;
+	--first-family: GeneralSans, sans-serif;
+	--second-family: Neue Regrade, sans-serif;
 }
 
 html._lock,
@@ -157,5 +157,6 @@ img {
 	}
 }
 
-@import 'components/header';
 @import 'components/button';
+@import 'components/header';
+@import 'components/footer';

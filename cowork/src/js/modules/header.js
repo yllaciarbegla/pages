@@ -2,7 +2,6 @@
 const header = document.querySelector('.header');
 const menuButton = document.querySelector('.navigation__toggler');
 const menuBody = document.querySelector('.navigation__wrapper');
-const menuUl = document.querySelector('.navigation__links-list');
 const lockPaddingValue =
 	window.innerWidth - document.querySelector('.page').offsetWidth + 'px';
 const lockPadding = document.querySelectorAll('.lock-padding');
@@ -47,7 +46,7 @@ function openMenu() {
 	header.classList.add('header_open');
 	menuButton.classList.add('navigation__toggler_active');
 	menuButton.setAttribute('aria-expanded', true);
-	menuUl.setAttribute('aria-hidden', false);
+	menuBody.setAttribute('aria-hidden', false);
 	menuBody.classList.add('navigation__wrapper_active');
 	menuBody.classList.toggle('visible');
 
@@ -64,7 +63,7 @@ function closeMenu() {
 	header.classList.remove('header_open');
 	menuButton.setAttribute('aria-expanded', false);
 	menuButton.classList.remove('navigation__toggler_active');
-	menuUl.setAttribute('aria-hidden', true);
+	menuBody.setAttribute('aria-hidden', true);
 	menuBody.classList.remove('navigation__wrapper_active');
 	setTimeout(() => menuBody.classList.toggle('visible'), 400);
 
