@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/head.html', { 'title': 'Cowork - Coworking Space Company',
-	'styles': '<link rel="stylesheet" href="css/home.min.css" />' })
+	@@include('html/head.html', { 'title': 'Cowork - Coworking Space Company', 'styles': '<link rel="stylesheet" href="css/home.min.css" />' })
 
 	<body class="page">
 		<div class="page__container">
@@ -12,7 +11,10 @@
 						Elevate Your Workspace with
 						<span class="hero__title_highlight">Cowork</span>
 					</h1>
-					<p class="hero__slogan subheading">Where innovation meets <br> collaboration 🚀</p>
+					<p class="hero__slogan subheading">
+						Where innovation meets <br />
+						collaboration 🚀
+					</p>
 					@@include('html/components/button.html', { 'classes': 'btn_big btn_red hero__button', 'text': 'Claim Your Spot' })
 				</div>
 				<div class="hero__image hero-image">
@@ -55,6 +57,81 @@
 							alt="Logoipsum logo" />
 					</li>
 				</ul>
+			</div>
+
+			<div class="features p-block">
+				<h2 class="features__title h2">Why Choose
+					<span class="features__title-image"></span>
+					Cowork?
+				</h2>
+
+				<div class="features__cards">
+					@@include('html/components/feature-card.html', {
+						'imgSrc': 'img/icons/planet.svg',
+						'imgAlt': 'Planet icon',
+						'title': 'Flexible Spaces',
+						'text': 'Whether you\'re a solopreneur, startup, or an established enterprise, our flexible office solutions cater to your evolving needs.',
+					})
+					@@include('html/components/feature-card.html', {
+						'imgSrc': 'img/icons/credit-card.svg',
+						'imgAlt': 'Credit card icon',
+						'title': 'Transparent Pricing',
+						'text': 'Choose a plan that suits your budget and business objectives, and experience the value of a premium coworking space without breaking the bank.',
+					})
+					@@include('html/components/feature-card.html', {
+						'imgSrc': 'img/icons/docs.svg',
+						'imgAlt': 'Documents icon',
+						'title': 'Tailored Memberships',
+						'text': 'Whether you prefer the flexibility of a hot desk or the exclusivity of a private office, Cowork offers tailored solutions to suit every working style.',
+					})
+				</div>
+			</div>
+
+			<div class="statistics p-block">
+				<div class="statistics__content">
+					<span class="subtitle">Cowork in Numbers</span>
+					<h2 class="statistics__title h2">Transformative Statistics That Speak Volumes</h2>
+					<div class="statistics__list">
+						<div class="statistics__list-item">
+							<span class="statistics__number h2">
+								240%
+							</span>
+							<span class="statistics__indicator text">
+								Community Growth
+							</span>
+						</div>
+						<div class="statistics__list-item">
+							<span class="statistics__number h2">
+								99%
+							</span>
+							<span class="statistics__indicator text">
+								Technology Uptime
+							</span>
+						</div>
+						<div class="statistics__list-item">
+							<span class="statistics__number h2">
+								50+
+							</span>
+							<span class="statistics__indicator text">
+								Happy Members
+							</span>
+						</div>
+						<div class="statistics__list-item">
+							<span class="statistics__number h2">
+								100%
+							</span>
+							<span class="statistics__indicator text">
+								Renewable Energy Sources
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="statistics__image statistics-image">
+					<picture class="statistics-image__wrapper">
+						<img class="statistics-image__item" src="img/home/second.jpg" alt="">
+					</picture>
+				</div>
 			</div>
 
 			@@include('html/components/footer.html')
