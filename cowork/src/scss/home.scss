@@ -3,9 +3,11 @@
 @import 'pages/home/features';
 @import 'pages/home/statistics';
 @import 'pages/home/faq';
-@import 'pages/home/join';
+@import 'sections/join';
+@import 'sections/blog';
 
 @import 'components/accordion';
+@import 'components/article-card';
 
 .p-block {
 	padding-block: 3rem;

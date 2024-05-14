@@ -1,0 +1,34 @@
+<section class="blog p-block">
+	<div class="blog__wrapper">
+		<span class="blog__subtitle subtitle">Cowork Chronicles </span>
+		<h2 class="blog__title h2">Insights, Innovation, and <span class="blog__title-image"></span>Inspiration</h2>
+		<p class="blog__description text">Stay updated on the latest trends in coworking, productivity tips, and success stories that define the Cowork experience.</p>
+	</div>
+
+	<div class="blog__articles">
+		@@include('../components/article-card.html', {
+			'imgSrc': 'img/blog/article-navigation.jpg',
+			'imgAlt': ' ',
+			'artCategory': 'Trending',
+			'readTime': '7 min read',
+			'artTitle': 'Navigating the Future: Trends in Modern Coworking Spaces',
+		})
+
+		@@include('../components/article-card.html', {
+			'imgSrc': 'img/blog/article-mastering.jpg',
+			'imgAlt': ' ',
+			'artCategory': 'Productivity',
+			'readTime': '5 min read',
+			'artTitle': 'Mastering Productivity: Tips from Cowork\'s High Achievers',
+		})
+
+		@@include('../components/article-card.html', {
+			'imgSrc': 'img/blog/article-tech-talk.jpg',
+			'imgAlt': ' ',
+			'artCategory': 'Talk',
+			'readTime': '10 min read',
+			'artTitle': 'Tech Talk: The Backbone of Cowork\'s Seamless Experience',
+		})
+	</div>
+	<a class="blog__link btn btn_regular btn_blue" href="#">View All</a>
+</section>
