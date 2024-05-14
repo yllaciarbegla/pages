@@ -1,8 +1,10 @@
 @import 'pages/home/hero';
 @import 'pages/home/trusted';
 @import 'pages/home/features';
-
 @import 'pages/home/statistics';
+@import 'pages/home/faq';
+
+@import 'components/accordion';
 
 .p-block {
 	padding-block: 3rem;
