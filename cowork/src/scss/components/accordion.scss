@@ -45,10 +45,6 @@
 		}
 
 		.accordion-icon {
-			&__round,
-			&__angle {
-				stroke: var(--white);
-			}
 
 			&__angle {
 				transform: rotateX(180deg);
