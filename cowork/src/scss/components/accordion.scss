@@ -33,6 +33,31 @@
 			padding: 1rem;
 			border-radius: 2rem;
 		}
+
+		&:has(.accordion-item__trigger:focus-visible) {
+			background-color: var(--black);
+			box-shadow: 8px 8px 16px #dbdbdc, -8px -8px 16px #ffffff;
+			.accordion-item__trigger {
+				color: var(--white);
+			}
+		}
+		@media (hover: hover) {
+			&:has(.accordion-item__trigger:hover) {
+				background-color: var(--black);
+				.accordion-item__trigger {
+					color: var(--white);
+				}
+			}
+		}
+
+		@media (hover: none) {
+			&:has(.accordion-item__trigger:active) {
+				background-color: var(--black);
+				.accordion-item__trigger {
+					color: var(--white);
+				}
+			}
+		}
 	}
 }
 .accordion-item {
@@ -45,7 +70,6 @@
 		}
 
 		.accordion-icon {
-
 			&__angle {
 				transform: rotateX(180deg);
 			}

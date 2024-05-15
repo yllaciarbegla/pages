@@ -70,9 +70,10 @@
 		align-items: center;
 		justify-content: center;
 
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 1024px) {
 			margin-block-end: 4rem;
 			flex-direction: row;
+			align-items: flex-start;
 		}
 	}
 
