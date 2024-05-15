@@ -2,6 +2,7 @@
 @import 'pages/home/trusted';
 @import 'pages/home/features';
 @import 'pages/home/statistics';
+@import 'pages/home/testimonial';
 @import 'pages/home/faq';
 @import 'sections/join';
 @import 'sections/blog';
@@ -14,5 +15,23 @@
 
 	@media screen and (min-width: 768px) {
 		padding-block: 4.5rem;
+	}
+}
+
+.top-line {
+	position: relative;
+	display: inline-block;
+	padding-block-start: 8px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		height: 1px;
+		width: 200px;
+
+		background-color: var(--white);
 	}
 }

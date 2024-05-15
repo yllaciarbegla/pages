@@ -18,6 +18,10 @@
 	&_blue {
 		background-color: var(--blue);
 		color: var(--white);
+
+		.testimonial-card__name {
+			color: var(--white);
+		}
 	}
 
 	&_yellow {

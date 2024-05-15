@@ -1,10 +1,12 @@
 const target = document.querySelector('.trusted__list');
 let isAnimated = false;
 
-if (
-	!window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
-	!window.matchMedia('(min-width: 768px)').matches
-) {
+const reduceMotion = window.matchMedia(
+	'(prefers-reduced-motion: reduce)'
+).matches;
+const media = window.matchMedia('(min-width: 768px)').matches;
+
+if (!reduceMotion && !media) {
 	addAnimation();
 }
 
@@ -35,9 +37,9 @@ function copyPast(elem, target) {
 }
 
 window.addEventListener('resize', () => {
-	if (document.documentElement.clientWidth >= 768 && isAnimated) {
+	if (window.innerWidth >= 768 && isAnimated) {
 		removeAnimation();
-	} else if (document.documentElement.clientWidth < 768 && !isAnimated) {
+	} else if (window.innerWidth < 768 && !isAnimated) {
 		addAnimation();
 	}
 });
