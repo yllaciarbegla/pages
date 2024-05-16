@@ -18,6 +18,11 @@ html._lock .page {
 	background-color: var(--black);
 }
 
+html._scroll-lock,
+html._scroll-lock .page {
+	overflow: hidden;
+}
+
 .page {
 	padding-block-start: 1rem;
 
@@ -27,9 +32,13 @@ html._lock .page {
 
 	&__container {
 		padding-inline: 1rem;
-		margin-inline: auto;
+		height: 100%;
+
+		display: flex;
+		flex-direction: column;
 
 		@media screen and (min-width: 768px) {
+			margin-inline: auto;
 			max-width: 768px;
 		}
 		@media screen and (min-width: 1024px) {
@@ -38,6 +47,10 @@ html._lock .page {
 		@media screen and (min-width: 1440px) {
 			max-width: 1440px;
 		}
+	}
+
+	&__content {
+		flex-grow: 1;
 	}
 }
 

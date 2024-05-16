@@ -30,52 +30,80 @@
 				</svg>
 
 				<div class="footer__newsletter footer-newsletter">
-					<p class="footer-newsletter__description text_sm">
-						Join our newsletter to stay up to date on features and releases.
-					</p>
-					<input
-						class="footer-newsletter__input text"
-						placeholder="Enter your email"
-						type="email"
-						required />
-					@@include('button.html', { 'text': 'Subscribe', 'classes':
-					'btn_regular btn_white footer-newsletter__button' })
-					<p class="footer-newsletter__description text_sm">
-						By subscribing you agree to with our Privacy Policy and provide
-						consent to receive updates from our company.
-					</p>
+					<form class="footer__form" action="post">
+						<p class="footer-newsletter__description text_sm">
+							Join our newsletter to stay up to date on features and releases.
+						</p>
+						<input
+							class="footer-newsletter__input text"
+							placeholder="Enter your email"
+							type="email"
+							required />
+						@@include('button.html', { 'text': 'Subscribe', 'classes':
+						'btn_regular btn_white footer-newsletter__button' })
+						<p class="footer-newsletter__description text_sm">
+							By subscribing you agree to with our Privacy Policy and provide
+							consent to receive updates from our company.
+						</p>
+					</form>
 				</div>
 			</div>
 
 			<div class="footer__links">
 				<ul class="footer__list" aria-label="Explore More">
-					<li class="footer__item"><a href="" class="footer__link animated-underline text_sm">Home</a></li>
 					<li class="footer__item">
-						<a href="" class="footer__link animated-underline text_sm">About</a>
+						<a href="index.html" class="footer__link animated-underline text_sm"
+							>Home</a
+						>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link animated-underline text_sm">Pricing</a>
+						<a href="about.html" class="footer__link animated-underline text_sm"
+							>About</a
+						>
 					</li>
-					<li class="footer__item"><a href="" class="footer__link animated-underline text_sm">Blog</a></li>
 					<li class="footer__item">
-						<a href="" class="footer__link animated-underline text_sm">Events</a>
+						<a
+							href="pricing.html"
+							class="footer__link animated-underline text_sm"
+							>Pricing</a
+						>
+					</li>
+					<li class="footer__item">
+						<a href="blog.html" class="footer__link animated-underline text_sm"
+							>Blog</a
+						>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link animated-underline text_sm"
+							>Events</a
+						>
 					</li>
 				</ul>
 
 				<ul class="footer__list" aria-label="Follow Us">
 					<li class="footer__item">
-						<a href="" class="footer__link animated-underline text_sm">Facebook</a>
+						<a href="" class="footer__link animated-underline text_sm"
+							>Facebook</a
+						>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link animated-underline text_sm">Instagram</a>
+						<a href="" class="footer__link animated-underline text_sm"
+							>Instagram</a
+						>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link animated-underline text_sm">LinkedIn</a>
+						<a href="" class="footer__link animated-underline text_sm"
+							>LinkedIn</a
+						>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link animated-underline text_sm">YouTube</a>
+						<a href="" class="footer__link animated-underline text_sm"
+							>YouTube</a
+						>
 					</li>
-					<li class="footer__item"><a href="" class="footer__link animated-underline text_sm">X</a></li>
+					<li class="footer__item">
+						<a href="" class="footer__link animated-underline text_sm">X</a>
+					</li>
 				</ul>
 			</div>
 		</div>
