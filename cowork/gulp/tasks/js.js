@@ -5,22 +5,22 @@ import uglify from 'gulp-uglify';
 export const js = () => {
 	return app.gulp
 		.src(app.path.src.js, { sourcemaps: true })
-		.pipe(
-			webpack({
-				mode: 'development',
-				output: {
-					filename: 'index.js',
-				},
-				module: {
-					rules: [
-						{
-							test: /\.(sass|less|css)$/,
-							use: ['style-loader', 'css-loader', 'sass-loader'],
-						},
-					],
-				},
-			})
-		)
+		// .pipe(
+		// 	webpack({
+		// 		mode: 'development',
+		// 		output: {
+		// 			filename: 'index.js',
+		// 		},
+		// 		module: {
+		// 			rules: [
+		// 				{
+		// 					test: /\.(sass|less|css)$/,
+		// 					use: ['style-loader', 'css-loader', 'sass-loader'],
+		// 				},
+		// 			],
+		// 		},
+		// 	})
+		// )
 		.pipe(app.gulp.dest(app.path.build.js))
 		.pipe(uglify())
 		.pipe(
