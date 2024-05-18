@@ -69,6 +69,7 @@ img {
 	font-family: var(--second-family);
 	font-size: 3rem;
 	line-height: 1.2;
+	text-transform: uppercase;
 
 	@media screen and (min-width: 768px) {
 		font-size: 6rem;
@@ -81,6 +82,7 @@ img {
 	font-family: var(--second-family);
 	font-size: 2rem;
 	line-height: 1.4;
+	text-transform: uppercase;
 
 	@media screen and (min-width: 768px) {
 		font-size: 3rem;

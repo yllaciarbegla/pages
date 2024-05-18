@@ -1,0 +1,149 @@
+@import 'components/article-card';
+
+@import 'sections/blog';
+@import 'sections/join';
+
+.p-block {
+	padding-block-start: 3rem;
+	margin-block-end: 3rem;
+
+	@media screen and (min-width: 768px) {
+		padding-block-start: 4.5rem;
+		margin-block-end: 4.5rem;
+	}
+}
+
+.article {
+	padding-block-start: 1.5rem;
+	margin-block-end: 3rem;
+
+	@media screen and (min-width: 768px) {
+		padding-block-start: 3rem;
+	}
+
+	&__head {
+		margin-block-end: 1.5rem;
+		border-bottom: 1px solid;
+
+		@media screen and (min-width: 768px) {
+			margin-block-end: 2rem;
+		}
+	}
+
+	&__date {
+		margin-block-end: 8px;
+		display: inline-block;
+		border: 1px solid var(--blue);
+		border-radius: 100px;
+		padding: 0px 12px;
+
+		background-color: var(--blue);
+
+		font-family: var(--first-family);
+		font-weight: 600;
+		font-size: 0.75rem;
+		line-height: 1.5;
+		text-transform: uppercase;
+		color: var(--white);
+	}
+
+	&__title {
+		word-wrap: break-word;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+
+		@media screen and (min-width: 1440px) {
+			flex-direction: row;
+			gap: 4rem;
+		}
+	}
+
+	&__text-content {
+		display: grid;
+		gap: 24px;
+	}
+
+	&__blockquote {
+		border-radius: 1.5rem;
+		padding: 1.5rem;
+
+		background-color: var(--yellow);
+
+		@media screen and (min-width: 768px) {
+			border-radius: 2rem;
+			padding: 2rem;
+		}
+	}
+
+	&__group {
+		display: grid;
+		gap: 0.75rem;
+
+		@media screen and (min-width: 768px) {
+			gap: 1rem;
+		}
+	}
+
+	&__image {
+		width: 100%;
+		border-radius: 1.5rem;
+
+		@media screen and (min-width: 768px) {
+			border-radius: 2rem;
+		}
+	}
+
+	&__tag {
+		justify-self: flex-start;
+
+		display: inline-block;
+		border: 1px solid var(--black);
+		border-radius: 0.5rem;
+		padding: 0.25rem 0.5rem;
+
+		font-family: var(--first-family);
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	&__aside {
+	}
+
+	&__author {
+		display: grid;
+		gap: 0 1rem;
+		grid-template-columns: 56px auto;
+		grid-template-rows: repeat(2, auto);
+
+		font-family: var(--first-family);
+		font-size: 0.75rem;
+		line-height: 1.5;
+	}
+}
+.author {
+	&__image-wrapper {
+		grid-row: span 2;
+	}
+	&__image {
+		border-radius: 100%;
+	}
+
+	&__name {
+		grid-column: 2/-1;
+		align-self: flex-end;
+
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	&__role {
+		grid-column: 2/-1;
+
+		font-weight: 400;
+	}
+}
