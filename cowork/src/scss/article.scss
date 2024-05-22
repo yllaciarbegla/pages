@@ -48,7 +48,13 @@
 	}
 
 	&__title {
-		word-wrap: break-word;
+		// word-wrap: break-word;
+	}
+
+	&__title-break {
+		@media screen and (min-width: 500px) {
+			display: none;
+		}
 	}
 
 	&__body {
