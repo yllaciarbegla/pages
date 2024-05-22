@@ -1,85 +1,18 @@
 .blog {
-	&__wrapper {
-		text-align: center;
-	}
-
-	&__subtitle {
-		display: inline-block;
-		margin-block-end: 1rem;
-	}
-
-	&__title {
-		margin-block-end: 1.5rem;
-
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		gap: 0 12px;
-
-		@media screen and (min-width: 768px) {
-			margin-inline: auto;
-			max-width: 80%;
-			gap: 8px 12px;
-		}
-		@media screen and (min-width: 1024px) {
-			max-width: 75%;
-		}
-		@media screen and (min-width: 1440px) {
-			max-width: 54%;
-		}
-	}
-
-	&__title-image {
-		width: 120px;
-		height: 48px;
-		border-radius: 3rem;
-
-		background-image: url(../img/home/train-road.jpg);
-		background-size: 100%;
-		background-position: center;
-
-		@media screen and (min-width: 768px) {
-			width: 180px;
-			height: 58px;
-		}
-	}
-
-	&__description {
-		margin-block-end: 3rem;
-
-		@media screen and (min-width: 768px) {
-			margin-inline: auto;
-			max-width: 75%;
-		}
-
-		@media screen and (min-width: 1024px) {
-			max-width: 55%;
-		}
-		@media screen and (min-width: 1440px) {
-			max-width: 40%;
-		}
-	}
-
 	&__articles {
-		margin-block-end: 2rem;
-
-		display: flex;
-		flex-direction: column;
-		gap: 2rem 1rem;
-		align-items: center;
-		justify-content: center;
+		display: grid;
+		gap: 1rem;
+		justify-items: center;
 
 		@media screen and (min-width: 1024px) {
-			margin-block-end: 4rem;
-			flex-direction: row;
-			align-items: flex-start;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, auto);
 		}
 	}
 
 	&__link {
-		margin-inline: auto;
-		width: fit-content;
-		display: block;
+		@media screen and (min-width: 1024px) {
+			grid-column: 2/3;
+		}
 	}
 }

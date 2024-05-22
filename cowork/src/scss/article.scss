@@ -1,7 +1,7 @@
 @import 'components/article-card';
 
-@import 'sections/blog';
 @import 'sections/join';
+@import 'sections/blog';
 
 .p-block {
 	padding-block-start: 3rem;
@@ -21,17 +21,25 @@
 		padding-block-start: 3rem;
 	}
 
+	@media screen and (min-width: 1440px) {
+		max-width: 1024px;
+		margin-inline: auto;
+	}
+
 	&__head {
 		margin-block-end: 1.5rem;
-		border-bottom: 1px solid;
 
 		@media screen and (min-width: 768px) {
 			margin-block-end: 2rem;
 		}
+
+		@media screen and (min-width: 1024px) {
+			padding-inline: 1rem;
+		}
 	}
 
 	&__date {
-		margin-block-end: 8px;
+		margin-block-end: 1rem;
 		display: inline-block;
 		border: 1px solid var(--blue);
 		border-radius: 100px;
@@ -48,7 +56,8 @@
 	}
 
 	&__title {
-		// word-wrap: break-word;
+		border-bottom: 1px solid;
+		padding-block-end: 1rem;
 	}
 
 	&__title-break {
@@ -58,12 +67,16 @@
 	}
 
 	&__body {
-		display: flex;
-		flex-direction: column;
+		display: grid;
 		gap: 2rem;
 
+		@media screen and (min-width: 1024px) {
+			padding-inline: 1rem;
+		}
+
 		@media screen and (min-width: 1440px) {
-			flex-direction: row;
+			padding-inline: 1rem;
+			grid-template-columns: 1fr 208px;
 			gap: 4rem;
 		}
 	}
@@ -85,12 +98,27 @@
 		}
 	}
 
+	&__text {
+		line-height: 2;
+	}
+
 	&__group {
 		display: grid;
-		gap: 0.75rem;
 
-		@media screen and (min-width: 768px) {
-			gap: 1rem;
+		&_big-gap {
+			gap: 0.75rem;
+
+			@media screen and (min-width: 768px) {
+				gap: 1rem;
+			}
+		}
+
+		&_small-gap {
+			gap: 0.25rem;
+
+			@media screen and (min-width: 768px) {
+				gap: 0.5rem;
+			}
 		}
 	}
 
@@ -131,6 +159,7 @@
 		line-height: 1.5;
 	}
 }
+
 .author {
 	&__image-wrapper {
 		grid-row: span 2;
@@ -151,5 +180,24 @@
 		grid-column: 2/-1;
 
 		font-weight: 400;
+	}
+}
+
+.blog {
+	&__subtitle {
+		text-align: center;
+		margin-block-end: 1rem;
+	}
+
+	&__title {
+		text-align: center;
+		margin-block-end: 2rem;
+
+		@media screen and (min-width: 768px) {
+			margin-block-end: 3rem;
+		}
+	}
+
+	&__articles {
 	}
 }

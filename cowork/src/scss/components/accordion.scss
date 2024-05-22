@@ -2,7 +2,6 @@
 	visibility: visible;
 	pointer-events: all;
 	margin: 0 0 1rem;
-	padding-block-start: 24px;
 	max-height: 100rem;
 	overflow: hidden;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -22,12 +21,15 @@
 .accordion {
 	&__item {
 		padding: 0.5rem;
-		margin-block-end: 2rem;
 		border-radius: 1.5rem;
 		border: 1px solid var(--black);
 		color: var(--black);
 
 		transition: background-color 0.3s, color 0.3s;
+
+		&:not(:last-child) {
+			margin-block-end: 2rem;
+		}
 
 		@media screen and (min-width: 768px) {
 			padding: 1rem;
