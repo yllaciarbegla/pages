@@ -13,7 +13,6 @@
 	text-align: center;
 	color: var(--black);
 
-
 	&:nth-child(3) {
 		@media screen and (min-width: 768px) and (max-width: 1023.9px) {
 			grid-column: span 2;
@@ -75,8 +74,8 @@
 	}
 
 	&__button {
-		width: 100%;
 		margin-block-end: 0.75rem;
+		width: 100%;
 	}
 
 	&__require {
@@ -85,9 +84,5 @@
 
 	&__time,
 	&__require {
-		font-family: var(--first-family);
-		font-weight: 400;
-		font-size: 0.875rem;
-		line-height: 1.8;
 	}
 }

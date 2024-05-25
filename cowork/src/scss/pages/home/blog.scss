@@ -15,12 +15,12 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		gap: 0 12px;
+		gap: 0 0.75rem;
 
 		@media screen and (min-width: 768px) {
 			margin-inline: auto;
 			max-width: 80%;
-			gap: 8px 12px;
+			gap: 0.5rem 0.75rem;
 		}
 		@media screen and (min-width: 1024px) {
 			max-width: 75%;

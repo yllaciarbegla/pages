@@ -2,8 +2,8 @@
 
 .testimonial {
 	&__wrapper {
-		border-radius: 24px;
-		padding: 24px;
+		border-radius: 1.5rem;
+		padding: 1.5rem;
 
 		background-color: var(--black);
 
@@ -11,7 +11,6 @@
 			border-radius: 2rem;
 			padding: 4.5rem 2rem;
 		}
-
 	}
 
 	&__group {
@@ -21,7 +20,6 @@
 
 		@media screen and (min-width: 768px) {
 			margin-block-end: 2rem;
-
 		}
 
 		@media screen and (min-width: 1440px) {
@@ -54,7 +52,6 @@
 			height: 64px;
 		}
 		@media screen and (min-width: 1024px) {
-
 			order: 0;
 		}
 	}

@@ -1,19 +1,17 @@
 .collapsible {
 	visibility: visible;
 	pointer-events: all;
-	margin: 0 0 1rem;
+	margin-block-end: 1rem;
 	max-height: 100rem;
 	overflow: hidden;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-	transition: clip-path 0.5s, max-height 0.5s, padding-block-start 0.5s,
-		visibility 0.5s;
+	transition: clip-path 0.5s, max-height 0.5s, visibility 0.5s;
 
 	&_collapsed {
 		visibility: hidden;
 		pointer-events: none;
+		margin-block-end: 0;
 		max-height: 0;
-		padding-block-start: 0;
-		margin: 0;
 		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 	}
 }
@@ -43,6 +41,7 @@
 				color: var(--white);
 			}
 		}
+
 		@media (hover: hover) {
 			&:has(.accordion-item__trigger:hover) {
 				background-color: var(--black);
@@ -62,6 +61,7 @@
 		}
 	}
 }
+
 .accordion-item {
 	&__active {
 		background-color: var(--black);
@@ -80,11 +80,10 @@
 
 	&__trigger {
 		position: relative;
-		width: 100%;
 		padding: 1rem 1rem;
-		text-align: start;
+		width: 100%;
 
-		gap: 8px;
+		gap: 0.5rem;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -93,6 +92,7 @@
 		font-weight: 600;
 		font-size: 1rem;
 		line-height: 1.5;
+		text-align: start;
 
 		color: var(--black);
 		background-color: transparent;

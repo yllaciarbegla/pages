@@ -18,11 +18,6 @@ html._lock .page {
 	background-color: var(--black);
 }
 
-html._scroll-lock,
-html._scroll-lock .page {
-	overflow: hidden;
-}
-
 .page {
 	padding-block-start: 1rem;
 
@@ -47,6 +42,7 @@ html._scroll-lock .page {
 }
 
 img {
+	height: 100%;
 	max-width: 100%;
 	object-fit: cover;
 }

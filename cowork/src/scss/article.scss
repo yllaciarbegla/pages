@@ -39,19 +39,14 @@
 	}
 
 	&__date {
-		margin-block-end: 1rem;
 		display: inline-block;
+		margin-block-end: 1rem;
 		border: 1px solid var(--blue);
 		border-radius: 100px;
-		padding: 0px 12px;
+		padding: 0 0.75rem;
 
 		background-color: var(--blue);
 
-		font-family: var(--first-family);
-		font-weight: 600;
-		font-size: 0.75rem;
-		line-height: 1.5;
-		text-transform: uppercase;
 		color: var(--white);
 	}
 
@@ -83,7 +78,7 @@
 
 	&__text-content {
 		display: grid;
-		gap: 24px;
+		gap: 1.5rem;
 	}
 
 	&__blockquote {
@@ -141,7 +136,7 @@
 
 		font-family: var(--first-family);
 		font-weight: 600;
-		font-size: 14px;
+		font-size: 0.875rem;
 		line-height: 1.5;
 	}
 
@@ -153,10 +148,6 @@
 		gap: 0 1rem;
 		grid-template-columns: 56px auto;
 		grid-template-rows: repeat(2, auto);
-
-		font-family: var(--first-family);
-		font-size: 0.75rem;
-		line-height: 1.5;
 	}
 }
 
@@ -172,26 +163,23 @@
 		grid-column: 2/-1;
 		align-self: flex-end;
 
-		font-weight: 600;
-		text-transform: uppercase;
+		color: var(--black);
 	}
 
 	&__role {
 		grid-column: 2/-1;
-
-		font-weight: 400;
 	}
 }
 
 .blog {
 	&__subtitle {
-		text-align: center;
 		margin-block-end: 1rem;
+		text-align: center;
 	}
 
 	&__title {
-		text-align: center;
 		margin-block-end: 2rem;
+		text-align: center;
 
 		@media screen and (min-width: 768px) {
 			margin-block-end: 3rem;

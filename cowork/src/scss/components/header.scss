@@ -1,6 +1,6 @@
 .header {
-	padding-block: 12px;
 	border-block: 1px solid var(--black);
+	padding-block: 0.75rem;
 
 	display: flex;
 	justify-content: space-between;
@@ -9,14 +9,15 @@
 	transition: background-color 0.3s;
 
 	@media screen and (min-width: 768px) {
-		padding-block: 16px;
+		padding-block: 1rem;
 	}
 
 	&_open {
 		background-color: var(--black);
 
 		.header__logo {
-			margin-inline-start: 20px;
+			margin-inline-start: 1.25rem;
+
 			path {
 				fill: white;
 			}
@@ -137,11 +138,11 @@
 
 .navigation {
 	&__toggler {
-		width: 60px;
-		height: 45px;
 		border: 1px solid var(--black);
 		border-radius: 42px;
-		padding: 12px;
+		padding: 0.75rem;
+		width: 60px;
+		height: 45px;
 
 		background-color: var(--black);
 
@@ -174,7 +175,7 @@
 		bottom: 0;
 
 		overflow: auto;
-		padding: 40px 36px;
+		padding: 2.5rem 2.25rem;
 		width: 100%;
 		height: calc(100vh - 86.6px);
 		height: calc(100dvh - 86.6px);
@@ -222,10 +223,10 @@
 	&__links-list {
 		display: flex;
 		flex-direction: column;
-		gap: 32px;
+		gap: 2rem;
 
 		@media (min-width: 768px) {
-			gap: 48px;
+			gap: 3rem;
 			flex-wrap: wrap;
 			flex-direction: row;
 			align-items: center;
@@ -236,7 +237,7 @@
 		&:not(.btn) {
 			font-family: var(--second-family);
 			font-weight: 700;
-			font-size: 32px;
+			font-size: 2rem;
 			line-height: 1.4;
 			color: var(--white);
 
@@ -258,7 +259,7 @@
 
 			@media (min-width: 768px) {
 				font-weight: 500;
-				font-size: 16px;
+				font-size: 1rem;
 				line-height: 1.5;
 				text-align: center;
 				color: var(--black);
@@ -291,7 +292,7 @@
 
 	&__buttons {
 		display: flex;
-		gap: 24px;
+		gap: 1.5rem;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: flex-end;
