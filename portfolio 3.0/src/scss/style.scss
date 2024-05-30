@@ -11,9 +11,17 @@
 	--accent-1: #6562f5;
 	--accent-2: #cadd57;
 
-	.page_dark {
-		--main: #e0ddd6;
-		--second: #333333;
+	.page {
+		&_dark {
+			--main: #e0ddd6;
+			--second: #333333;
+		}
+
+		&_monochrome {
+			--main: #e0ddd6;
+			--second: #333333;
+			--accent-1: #cadd57;
+		}
 	}
 
 	--animation-c-b: cubic-bezier(0.55, -0.41, 0.51, 1.37);
@@ -86,82 +94,6 @@ html {
 	}
 }
 
-.theme-toggler {
-	width: 96px;
-	height: 96px;
-	overflow: hidden;
-	border-radius: 50px;
-	aspect-ratio: 1;
-
-	transition: background-color 0.3s, width 0.3s;
-	background-color: var(--accent-1);
-
-	&:focus-visible {
-		background-color: var(--accent-2);
-	}
-
-	@media (hover: hover) {
-		&:hover {
-			background-color: var(--accent-2);
-		}
-	}
-
-	@media (hover: none) {
-		&:active {
-			background-color: var(--accent-2);
-		}
-	}
-
-	&_dark {
-		width: 100%;
-
-		.theme-toggler__icon {
-			path:nth-child(2) {
-				transform: translate(0, -1rem);
-				opacity: 0.5;
-			}
-			path:nth-child(3) {
-				transform: translate(0, 1rem);
-				opacity: 0.5;
-			}
-			path:nth-child(4) {
-				transform: translate(-1rem, -1rem);
-				opacity: 0.5;
-			}
-			path:nth-child(5) {
-				transform: translate(1rem, 1rem);
-				opacity: 0.5;
-			}
-			path:nth-child(6) {
-				transform: translate(-1rem, 0);
-				opacity: 0.5;
-			}
-			path:nth-child(7) {
-				transform: translate(1rem, 0);
-				opacity: 0.5;
-			}
-			path:nth-child(8) {
-				transform: translate(-1rem, 1rem);
-				opacity: 0.5;
-			}
-			path:nth-child(9) {
-				transform: translate(1rem, -1rem);
-				opacity: 0.5;
-			}
-		}
-	}
-
-	&__icon {
-		pointer-events: none;
-		margin: 1rem;
-		border-radius: 50%;
-
-		path {
-			transition: transform 0.4s var(--animation-c-b), opacity 0.2s;
-		}
-	}
-}
-
 .button {
 	border-radius: 60px;
 	padding: 1.25rem 2.5rem;
@@ -209,4 +141,26 @@ html {
 	position: fixed;
 	width: 100%;
 	bottom: 0;
+}
+
+// Theme switch
+
+.page {
+	&_light {
+		.theme-switch__button {
+			background-image: url(../img/icons/sun.svg);
+		}
+	}
+
+	&_dark {
+		.theme-switch__button {
+			background-image: url(../img/icons/moon.svg);
+		}
+	}
+
+	&_monochrome {
+		.theme-switch__button {
+			background-image: url(../img/icons/monochrome.svg);
+		}
+	}
 }

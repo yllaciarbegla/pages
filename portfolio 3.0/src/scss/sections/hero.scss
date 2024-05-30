@@ -1,15 +1,5 @@
 .hero {
-	&__header {
-		background-color: black;
-		color: white;
-		border-radius: 60px;
-		padding: 10px 1rem;
-	}
-
 	&__content {
-	}
-
-	&__greeting {
 	}
 
 	&__title {
@@ -17,38 +7,147 @@
 		}
 	}
 
+	&__greeting {
+	}
+
 	&__actions {
 	}
 }
-.header {
-	&__menu {
-	}
-}
-.header-menu {
-	&_link {
-		padding: 10px;
+
+.theme-switch {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	&__wrapper {
+		overflow: hidden;
+		min-width: 96px;
+		min-height: 96px;
+		max-width: 288px;
 		border-radius: 50px;
-		&:hover {
-			background-color: var(--orange);
+		background-color: var(--accent-1);
+
+		transition: min-width 0.3s;
+
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding: 8px;
+	}
+
+	&__button {
+		border-radius: 50%;
+		overflow: hidden;
+		width: 80px;
+		aspect-ratio: 1;
+		color: #e0ddd6;
+
+		background-repeat: no-repeat;
+		background-position: center;
+
+		transition: visibility 0s 0.6s, opacity 0.3s 0.3s, background-color 0.3s;
+		background-color: transparent;
+
+		&:focus-visible {
+			background-color: var(--accent-2);
+			color: #e0ddd6;
+		}
+
+		@media (hover: hover) {
+			&:hover {
+				background-color: var(--accent-2);
+				color: #e0ddd6;
+			}
+		}
+
+		@media (hover: none) {
+			&:active {
+				background-color: var(--accent-2);
+				color: #e0ddd6;
+			}
 		}
 	}
 
 	&__list {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1rem;
-		justify-content: center;
+		display: none;
 
-		@media screen and (min-width: 768px) {
-			justify-content: flex-end;
+		&_visible {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem;
 		}
 	}
 
-	&__item {
-		padding: 1rem;
+	&_open {
+		.theme-switch {
+			&__wrapper {
+				min-width: 288px;
+			}
 
+			&__button {
+				position: absolute;
+				visibility: hidden;
+				opacity: 0;
+			}
+
+			&__list {
+			}
+		}
 	}
 }
+
+.theme-list {
+	&__item {
+		width: 80px;
+		aspect-ratio: 1;
+		overflow: hidden;
+	}
+
+	&__button {
+		width: 100%;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		padding: 1rem;
+		line-height: 0;
+		background-color: transparent;
+		color: #e0ddd6;
+
+		transition: background-color 0.3s, color 0.3s;
+
+		&:focus-visible {
+			background-color: var(--accent-2);
+			color: #333333;
+		}
+
+		@media (hover: hover) {
+			&:hover {
+				background-color: var(--accent-2);
+				color: #333333;
+			}
+		}
+
+		@media (hover: none) {
+			&:active {
+				background-color: var(--accent-2);
+				color: #333333;
+			}
+		}
+
+		&_light {
+		}
+
+		&_dark {
+		}
+
+		&_monochrome {
+		}
+	}
+
+	&__icon {
+		pointer-events: none;
+	}
+}
+
 .hero-actions {
 	&__link {
 	}
