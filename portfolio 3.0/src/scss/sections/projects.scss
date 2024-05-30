@@ -1,0 +1,68 @@
+.projects {
+	&__content {
+	}
+
+	&__title {
+		color: var(--main);
+	}
+
+	&__list {
+		gap: 1.5rem;
+		display: flex;
+		flex-direction: column;
+
+		@media screen and (min-width: 768px) {
+			gap: 2rem;
+		}
+	}
+
+	&__item {
+	}
+
+	&__button {
+
+	}
+}
+.project-item {
+	&__wrapper {
+		padding: 1rem;
+		overflow: hidden;
+		background-color: var(--main);
+		color: var(--second);
+		border-radius: 1.5rem;
+
+		display: flex;
+		gap: 1.5rem;
+		flex-direction: column-reverse;
+
+		@media screen and (min-width: 768px) {
+			border-radius: 2rem;
+			padding: 1.5rem;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media screen and (min-width: 1024px) {
+			gap: 2rem;
+		}
+	}
+	&__image {
+	}
+
+	&__content {
+	}
+
+	&__title {
+	}
+
+	&__tag-list {
+	}
+
+	&__tag {
+	}
+
+	&__description {
+	}
+
+	&__link {
+	}
+}

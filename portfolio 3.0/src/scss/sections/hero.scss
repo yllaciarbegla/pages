@@ -1,0 +1,55 @@
+.hero {
+	&__header {
+		background-color: black;
+		color: white;
+		border-radius: 60px;
+		padding: 10px 1rem;
+	}
+
+	&__content {
+	}
+
+	&__greeting {
+	}
+
+	&__title {
+		&_colored {
+		}
+	}
+
+	&__actions {
+	}
+}
+.header {
+	&__menu {
+	}
+}
+.header-menu {
+	&_link {
+		padding: 10px;
+		border-radius: 50px;
+		&:hover {
+			background-color: var(--orange);
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		justify-content: center;
+
+		@media screen and (min-width: 768px) {
+			justify-content: flex-end;
+		}
+	}
+
+	&__item {
+		padding: 1rem;
+
+	}
+}
+.hero-actions {
+	&__link {
+	}
+}
