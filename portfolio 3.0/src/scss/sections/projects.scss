@@ -20,9 +20,9 @@
 	}
 
 	&__button {
-
 	}
 }
+
 .project-item {
 	&__wrapper {
 		padding: 1rem;
@@ -41,11 +41,22 @@
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 		}
+
 		@media screen and (min-width: 1024px) {
 			gap: 2rem;
 		}
+
+		&_reverse {
+			.project-item__image-wrapper {
+				@media screen and (min-width: 768px) {
+					order: 1;
+				}
+			}
+		}
 	}
-	&__image {
+
+	&__image-wrapper {
+		background-color: var(--second);
 	}
 
 	&__content {
